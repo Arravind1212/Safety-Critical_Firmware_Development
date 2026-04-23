@@ -25,10 +25,6 @@ Firmware application layer contains the following main system behavior.
 - Convert raw ADC values
 - Threshold checks
 - Trigger control actions
-
-<p align="left"> <img src="../docs/images/Sensor_Monitoring.c.png" width="600"/> </p>
-
-## Control_Logic.c
 - Control decisions based on measurements
 ※ For example threshold-based control, actuator enable/disable, balancing-like logic
 
