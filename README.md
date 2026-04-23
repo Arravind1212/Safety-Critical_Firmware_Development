@@ -12,6 +12,7 @@ fault detection, and safety mechanisms aligned with automotive functional safety
 
 - The firmware is designed as a real-time, safety-critical embedded system running on an RTOS-based architecture.
 It interfaces with external sensor and monitoring hardware through a robust isolated communication interface.
+
 ![System Architecture](docs/images/System_Overview.png)
 
 ## Technical Description
@@ -25,6 +26,7 @@ The firmware architecture is divided into three major layers:
 
 The system is designed to be scalable and suitable for automotive applications, with considerations for ISO26262 safety compliance, 
 modularity, and deterministic execution.
+
 ![Firmware Architecture](docs/images/Firmware_Architecture.png)
 
 The system performs the following **key functions**:
@@ -39,14 +41,17 @@ The system performs the following **key functions**:
 - Monitoring Task → Sensor acquisition + safety checks  
 - Diagnostics Task → Startup & runtime validation  
 - Watchdog Task → System health supervision  
-- Communication Task → Logging / data exchange  
+- Communication Task → Logging / data exchange
+  
 ![RTOS Tasks](docs/images/RTOS_tasks.png)
 
 ## Communication Design
+
 ![Communication Flow](docs/images/Communication_Flow.png)
 - Command + CRC-based communication
 - Data integrity validation using CRC
 - Reliable communication over isolated interface
+
 ![SPI Non-Blocking Communication](docs/images/Communication_Flow2.png)
 
 ## Safety Features
@@ -62,9 +67,11 @@ The system performs the following **key functions**:
 - Support for non-blocking communication (ISR-based)  
 - Optimized task scheduling and prioritization  
 - Efficient memory usage strategy  
+
 ![CPU Load Distribution](docs/images/CPULoad_Distribution.png)
 
 ## Presentation
+
 📄 [View Full Technical Presentation](docs/Technical_Presentation.pdf)
 
 ## Future Improvements
