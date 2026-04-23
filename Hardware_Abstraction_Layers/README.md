@@ -1,9 +1,9 @@
 # Drivers Module
 
 ## Overview
-→ This module provides low-level hardware interface drivers and communication foundations for a real-time embedded system.
-→ It abstracts hardware peripherals and enables reliable communication, diagnostics, and control. 
-→ The design supports both prototype (blocking) and production-level (non-blocking, interrupt-driven) implementations.
+- This module provides low-level hardware interface drivers and communication foundations for a real-time embedded system.
+- It abstracts hardware peripherals and enables reliable communication, diagnostics, and control.
+- The design supports both prototype (blocking) and production-level (non-blocking, interrupt-driven) implementations.
 
 ---
 
@@ -27,7 +27,7 @@
 
 ## Driver Architecture
 
-<p align="center">  <img src="../docs/images/firmware_architecture.png" width="500"/> </p>
+<p align="center">  <img src="../docs/images/Firmware_Architecture.png" width="500"/> </p>
 
 The driver layer acts as the Hardware Abstraction Layer (HAL), interfacing between hardware peripherals and 
 higher-level modules such as diagnostics, control, and communication stacks.
