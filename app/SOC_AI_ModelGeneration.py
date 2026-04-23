@@ -34,7 +34,7 @@ model.fit(X_train, y_train)
 c_code = m2c.export_to_c(model)
 
 # 5. Save to file
-with open("soc_model.c", "w") as f:
+with open("SOC_Model_AI_Prediction.c", "w") as f:
     f.write(c_code)
 
 print("Model trained and C code saved to 'soc_model.c'")
