@@ -1,48 +1,34 @@
 # Safety-Critical Embedded System with AI-Based State Estimation
-
-RTOS-based firmware implementing real-time monitoring, diagnostics, communication protocols, and AI-driven SOC estimation.
-
-## Project Structure
-- **app/** → Application layer (RTOS tasks, control logic, AI estimation)  
-- **services/** → Control layer (protocol, device driver, PEC15)  
-- **drivers/** → Hardware abstraction (SPI, UART, GPIO, CAN, Timer)  
-- **diagnostics/** → Safety and fault detection  
-- **configs/** → System configuration and thresholds  
-- **tests/** → Validation and test programs  
-- **docs/** → Documentation and diagrams  
-
 ## Overview
-The objective of this project is to develop a complete firmware to enable communication between the LTC6813 battery cell monitoring IC 
+RTOS-based firmware implementation with:
+- Real-time monitoring
+- Diagnostics and safety checks
+- SPI/CAN communication
+- AI-based SOC estimation (XGBoost)
+- EKF-based state estimation
+
+## Objective
+- The objective of this project is to develop a complete firmware to enable communication between the LTC6813 battery cell monitoring IC 
 and the NXP S32K344 microcontroller (MCU) using the isoSPI protocol.
 
-- It performs real-time data acquisition, safety monitoring, diagnostics, and control actions in a deterministic manner.
+- The system performs real-time data acquisition, diagnostics, and control in a deterministic manner, following a modular layered architecture:
+**Application → Services → HAL**
 
-- The firmware follows a modular layered architecture (Application → Service → HAL) and incorporates robust communication handling, 
-fault detection, and safety mechanisms aligned with automotive functional safety principles.
-
-- The firmware is designed as a real-time, safety-critical embedded system running on an RTOS-based architecture.
-It interfaces with external sensor and monitoring hardware through a robust isolated communication interface.
+- It integrates robust communication, fault detection, and safety mechanisms aligned with automotive principles.
 
 - This project demonstrates the integration of **AI-based and model-based estimation techniques**,
 making it suitable for advanced automotive and autonomous system applications.
 
 <p align="center"> <img src="docs/images/System_Overview.png" width="600"/> </p>
 
-## Technical Description
-The firmware architecture is divided into three major layers:
- 1. Application Layer  
-   Implements system-level logic including monitoring, safety evaluation, control decisions, and error handling.
- 2. Service Layer  
-   Handles protocol-specific operations, command encoding/decoding, CRC validation, and diagnostic routines.
- 3. Hardware Abstraction Layer (HAL)  
-   Provides low-level drivers for SPI, GPIO, UART, CAN, and timer peripherals, ensuring portability and hardware independence.
-
-The system is designed to be scalable and suitable for automotive applications, with considerations for ISO26262 safety compliance, 
+- The system is designed to be scalable and suitable for automotive applications, with considerations for ISO26262 safety compliance, 
 modularity, and deterministic execution.
 
 <p align="center"> <img src="docs/images/Firmware_Architecture.png" width="600"/> </p>
 
-The system performs the following **key functions**:
+---
+
+**Key functions**:
 - Real-time acquisition of sensor data using ADC-based measurement
 - Execution of safety-critical checks including threshold monitoring and fault detection
 - Communication with external devices using SPI over an isolated interface
@@ -115,8 +101,17 @@ demonstrating the integration of machine learning with embedded systems.
 
 📄 [View Full Technical Presentation](docs/Technical_Presentation.pdf)
 
+## Project Structure
+- **app/** → Application layer (RTOS tasks, control logic, AI estimation)  
+- **services/** → Control layer (protocol, device driver, PEC15)  
+- **drivers/** → Hardware abstraction (SPI, UART, GPIO, CAN, Timer)  
+- **diagnostics/** → Safety and fault detection  
+- **configs/** → System configuration and thresholds  
+- **tests/** → Validation and test programs  
+- **docs/** → Documentation and diagrams  
+
 ## Future Improvements
 - Sensor fusion integration  
 - State estimation (Kalman Filter)  
 - Advanced control algorithms  
-- ROS / autonomous system integration  
+- ROS / autonomous system integration
