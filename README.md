@@ -2,6 +2,15 @@
 
 RTOS-based firmware implementing real-time monitoring, diagnostics, communication protocols, and AI-driven SOC estimation.
 
+## Project Structure
+- **app/** → Application layer (RTOS tasks, control logic, AI estimation)  
+- **services/** → Control layer (protocol, device driver, PEC15)  
+- **drivers/** → Hardware abstraction (SPI, UART, GPIO, CAN, Timer)  
+- **diagnostics/** → Safety and fault detection  
+- **configs/** → System configuration and thresholds  
+- **tests/** → Validation and test programs  
+- **docs/** → Documentation and diagrams  
+
 ## Overview
 The objective of this project is to develop a complete firmware to enable communication between the LTC6813 battery cell monitoring IC 
 and the NXP S32K344 microcontroller (MCU) using the isoSPI protocol.
