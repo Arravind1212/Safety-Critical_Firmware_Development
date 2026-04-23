@@ -71,7 +71,7 @@ Includes↓
 - Open-wire / short detection
 - Measurement consistency validation
 (Runtime Task)
-<p align="center"> <img src="../docs/images/runtime_diag_code.png" width="500"/> </p>
+<p align="center"> <img src="../docs/images/RTOS_tasks.png" width="500"/> </p>
 
 **Key Diagnostic Implementations:**
 **SPI Communication Check ↓**
