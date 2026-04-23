@@ -8,7 +8,7 @@ It contains the following main system behavior.
 - Create RTOS tasks
 - Start scheduler
 
-![main.c](..docs/images/main.png)
+![main.c](../docs/images/main.png)
 
 ## System_Init.c
 - Startup sequence
