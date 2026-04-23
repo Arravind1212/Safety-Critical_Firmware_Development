@@ -1,7 +1,5 @@
 ## Application_Layer
-This is the firmware application layer.
-
-It contains the following main system behavior.
+Firmware application layer contains the following main system behavior.
 
 <p align="left"> <img src="../docs/images/Application_Layer_Outline.png" width="400"/> </p>
 
