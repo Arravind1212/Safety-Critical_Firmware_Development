@@ -53,7 +53,7 @@ SPI is used for communication with external devices through an isolated interfac
 - CPU waits during transfer  
 - Suitable for early prototyping  
 
-<p align="center">  <img src="../docs/images/spi_blocking.png" width="500"/> </p>
+<p align="center">  <img src="../docs/images/spi_blocking.png" width="600"/> </p>
 
 ---
 
@@ -64,7 +64,9 @@ SPI is used for communication with external devices through an isolated interfac
 - Improves system responsiveness  
 - Suitable for real-time systems  
 
-<p align="center">  <img src="../docs/images/spi_nonblocking.png" width="500"/> </p>
+<p align="center">  <img src="../docs/images/Driver_SPI_Non-BlockingInterface_Overview.png" width="500"/> </p>
+<p align="center">  <img src="../docs/images/Driver_SPI_Non-BlockingInterface1.png" width="500"/> </p>
+<p align="center">  <img src="../docs/images/Driver_SPI_Non-BlockingInterface2.png" width="500"/> </p>
 
 ---
 
@@ -123,7 +125,8 @@ ISO-TP (ISO 15765-2) enables transmission of multi-frame messages over CAN.
 - Message segmentation and reassembly  
 - Queue-based transmission  
 
-<p align="center">  <img src="../docs/images/isotp_flow.png" width="500"/> </p>
+<p align="center">  <img src="../docs/images/isotp_flow1.png" width="500"/> </p>
+<p align="center">  <img src="../docs/images/isotp_flow2.png" width="500"/> </p>
 
 ---
 
@@ -132,13 +135,25 @@ ISO-TP (ISO 15765-2) enables transmission of multi-frame messages over CAN.
 
 UDS (Unified Diagnostic Services) is used for diagnostic communication over CAN.
 
+<p align="center">  <img src="../docs/images/UDS_Architecture.png" width="500"/> </p>
+
 ### Key Features
-- Service-based architecture (SID handling)  
-- Session management  
-- Security access (Seed & Key)  
+- Service-based architecture (SID handling)
+
+<p align="center">  <img src="../docs/images/UDS_Service_Layer1.png" width="500"/> </p>
+<p align="center">  <img src="../docs/images/UDS_Service_Layer2.png" width="500"/> </p>
+  
+- Session management
+
+<p align="center">  <img src="../docs/images/UDS_Session_Layer.png" width="500"/> </p>
+  
+- Security access (Seed & Key)
+
+<p align="center">  <img src="../docs/images/UDS_Security_Layer.png" width="500"/> </p>
+  
 - Diagnostic data read (e.g., sensor values, system state)  
 
-<p align="center">  <img src="../docs/images/uds_architecture.png" width="500"/> </p>
+<p align="center">  <img src="../docs/images/UDS_DTC_Layer.png" width="500"/> </p>
 
 ---
 
