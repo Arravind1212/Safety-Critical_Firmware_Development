@@ -38,21 +38,21 @@ The system performs the following **key functions**:
 - Execution of startup and runtime diagnostics to detect latent faults
 
 ## RTOS Task Design
+  
+<p align="center"> <img src="docs/images/RTOS_tasks.png" width="600"/> </p>
 - Monitoring Task → Sensor acquisition + safety checks  
 - Diagnostics Task → Startup & runtime validation  
 - Watchdog Task → System health supervision  
 - Communication Task → Logging / data exchange
-  
-<p align="center"> <img src="docs/images/RTOS_tasks.png" width="600"/> </p>
 
 ## Communication Design
 
-<p align="center"> <img src="docs/images/Communication_Flow.png" width="600"/> </p>
+<p align="left"> <img src="docs/images/Communication_Flow.png" width="600"/> </p>
 - Command + CRC-based communication
 - Data integrity validation using CRC
 - Reliable communication over isolated interface
 
-<p align="center"> <img src="docs/images/Communication_Flow2.png" width="600"/> </p>
+<p align="left"> <img src="docs/images/Communication_Flow2.png" width="600"/> </p>
 
 ## Safety Features
 - Startup diagnostics before system operation  
@@ -68,7 +68,7 @@ The system performs the following **key functions**:
 - Optimized task scheduling and prioritization  
 - Efficient memory usage strategy  
 
-<p align="center"> <img src="docs/images/CPULoad_Distribution.png)
+<p align="left"> <img src="docs/images/CPULoad_Distribution.png)
 
 ## ISO26262 implementation
 → Performing Hazard Analysis and Risk Assessment (HARA) ↓
