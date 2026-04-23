@@ -23,6 +23,7 @@ tests/
 ├── test_short_check.c
 ├── test_redundancy.c
 ├── test_runtime_diagnostics.c
+└──test_soc_ai.c
 ```
 
 ## Test Coverage
@@ -38,6 +39,3 @@ tests/
 ## Notes
 - Tests can be executed via UART logging or debugger
 - Designed for demonstration and validation purposes
-├── test_soc_ai.c
-├── test_soc_ekf.c
-└── test_logs.md
