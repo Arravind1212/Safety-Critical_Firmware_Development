@@ -3,7 +3,7 @@ This is the firmware application layer.
 
 It contains the following main system behavior.
 
-<p align="left"> <img src="../docs/images/Application_Layer_Outline.png" width="600"/> </p>
+<p align="left"> <img src="../docs/images/Application_Layer_Outline.png" width="400"/> </p>
 
 ## main.c
 - Program entry
