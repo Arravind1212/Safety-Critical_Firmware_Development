@@ -13,6 +13,9 @@ fault detection, and safety mechanisms aligned with automotive functional safety
 - The firmware is designed as a real-time, safety-critical embedded system running on an RTOS-based architecture.
 It interfaces with external sensor and monitoring hardware through a robust isolated communication interface.
 
+- This project demonstrates the integration of **AI-based and model-based estimation techniques**,
+making it suitable for advanced automotive and autonomous system applications.
+
 <p align="center"> <img src="docs/images/System_Overview.png" width="600"/> </p>
 
 ## Technical Description
@@ -70,6 +73,18 @@ The system performs the following **key functions**:
 - Efficient memory usage strategy  
 
 <p align="center"> <img src="docs/images/CPULoad_Distribution.png" width="600"/> </p>
+
+## AI-Based State Estimation (SOC)
+This project includes an AI-based state estimation module implemented using **XGBoost regression**, 
+demonstrating the integration of machine learning with embedded systems.
+
+### Key Points
+- Model trained using voltage, current, and temperature data  
+- Converted to embedded C code using `m2cgen`  
+- Runs directly on MCU without external ML libraries  
+- Designed for real-time execution  
+
+<p align="center">  <img src="docs/images/soc_ai.png" width="600"/> </p>
 
 ## ISO26262 implementation
 → Performing Hazard Analysis and Risk Assessment (HARA) ↓
