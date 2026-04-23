@@ -41,6 +41,7 @@ int main(void) {
     xTaskCreate(WatchdogRefresh_Task,   "WatchdogRefresh",   256, NULL, 2, NULL);
     xTaskCreate(DischargeTimer_Task,    "DischargeTimer",    256, NULL, 1, NULL);
     xTaskCreate(HostComm_Task,          "HostComm",          512, NULL, 1, NULL);
+    xTaskCreate(RuntimeDiagnostics_Task,"RuntimeDiag",       512, NULL, 2, NULL);
 
     UART_Log("[RTOS] Starting scheduler...\r\n");
     vTaskStartScheduler();
