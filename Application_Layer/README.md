@@ -8,34 +8,46 @@ It contains the following main system behavior.
 - Create RTOS tasks
 - Start scheduler
 
-## system_init.c
+![main.c](docs/images/main.c.png)
+
+## System_Init.c
 - Startup sequence
 - Wake external device
 - Clear registers
 - Load default configuration
 - Call startup diagnostics
 
-## sensor_monitor.c
+![System_Init.c](docs/images/System_Init.c.png)
+
+## Sensor_Monitoring.c
 - Periodic data read
 - Convert raw ADC values
 - Threshold checks
 - Trigger control actions
 
-## control_logic.c
+![Sensor_Monitoring.c](docs/images/Sensor_Monitoring.c.png)
+
+## Control_Logic.c
 - Control decisions based on measurements
 ※ For example threshold-based control, actuator enable/disable, balancing-like logic
 
-## watchdog_task.c
+![Control_Logic.c](docs/images/Control_Logic.c.png)
+
+## Watchdog_Task.c
 - Periodic watchdog refresh
 - Timeout handling
 
-## comm_task.c
+![Watchdog_Task.c](docs/images/Watchdog_Task.c.png)
+
+## Comm_Task.c
 - Send logs / status through UART or CAN
 - Package data for transmission
 
-## error_handler.c
+## Error_Handler.c
 - Central error processing
 - Recovery attempt
 - Safe shutdown if needed
+
+![Error_Handler.c](docs/images/Error_Handler.c.png)
 
 --END--
