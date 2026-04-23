@@ -28,7 +28,7 @@ It contains the following main system behavior.
 - Threshold checks
 - Trigger control actions
 
-![Sensor_Monitoring.c](../docs/images/Sensor_Monitoring.png)
+![Sensor_Monitoring.c](../docs/images/Sensor_Monitoring.c.png)
 
 ## Control_Logic.c
 - Control decisions based on measurements
