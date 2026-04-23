@@ -80,7 +80,7 @@ UART is used for debugging, logging, and system monitoring.
 - Debug logging interface  
 - Lightweight implementation  
 
-<p align="center">  <img src="../docs/images/uart_driver_code.png" width="500"/> </p>
+<p align="center">  <img src="../docs/images/uart_driver_code.png" width="350"/> </p>
 
 ---
 
@@ -95,7 +95,7 @@ GPIO driver handles digital input/output operations.
 - Chip Select (CS) control  
 - Sensor interface support  
 
-<p align="center">  <img src="../docs/images/gpio_driver_code.png" width="500"/> </p>
+<p align="center">  <img src="../docs/images/gpio_driver_code.png" width="350"/> </p>
 
 ---
 
@@ -167,7 +167,7 @@ Provides timing control for real-time operations.
 - Periodic task scheduling  
 - Time-based execution control  
 
-<p align="center">  <img src="../docs/images/timer_driver_code.png" width="500"/> </p>
+<p align="center">  <img src="../docs/images/timer_driver_code.png" width="350"/> </p>
 
 ---
 
