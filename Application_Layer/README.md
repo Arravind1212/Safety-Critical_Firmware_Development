@@ -17,7 +17,7 @@ It contains the following main system behavior.
 - Load default configuration
 - Call startup diagnostics
 
-![System_Init.c](docs/images/System_Init.c.png)
+![System_Init.c](docs/images/System_Init.png)
 
 ## Sensor_Monitoring.c
 - Periodic data read
@@ -25,19 +25,19 @@ It contains the following main system behavior.
 - Threshold checks
 - Trigger control actions
 
-![Sensor_Monitoring.c](docs/images/Sensor_Monitoring.c.png)
+![Sensor_Monitoring.c](docs/images/Sensor_Monitoring.png)
 
 ## Control_Logic.c
 - Control decisions based on measurements
 ※ For example threshold-based control, actuator enable/disable, balancing-like logic
 
-![Control_Logic.c](docs/images/Control_Logic.c.png)
+![Control_Logic.c](docs/images/Control_Logic.png)
 
 ## Watchdog_Task.c
 - Periodic watchdog refresh
 - Timeout handling
 
-![Watchdog_Task.c](docs/images/Watchdog_Task.c.png)
+![Watchdog_Task.c](docs/images/Watchdog_Task.png)
 
 ## Comm_Task.c
 - Send logs / status through UART or CAN
@@ -48,6 +48,6 @@ It contains the following main system behavior.
 - Recovery attempt
 - Safe shutdown if needed
 
-![Error_Handler.c](docs/images/Error_Handler.c.png)
+![Error_Handler.c](docs/images/Error_Handler.png)
 
 --END--
