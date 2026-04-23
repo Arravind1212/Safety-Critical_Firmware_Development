@@ -25,7 +25,7 @@ The following diagnostics are implemented:
 
 ## Diagnostic Flow
 
-<p align="center">  <img src="../docs/images/RTOS_tasks.png" width="600"/></p>
+<p align="center">  <img src="../docs/images/RTOS_tasks.png" width="500"/></p>
 
 The diagnostics are executed in two stages:
 - Startup diagnostics → full validation before operation  
@@ -58,8 +58,6 @@ The system performs a complete validation sequence before enabling normal operat
 7 Short-circuit detection
 8 Redundancy check
 
-<p align="center"> <img src="../docs/images/startup_diag_code.png" width="700"/> </p>
-
 **Runtime Diagnostics**
 Periodic checks are executed during system operation to detect faults and degraded conditions.
 
@@ -70,56 +68,56 @@ Includes↓
 - Open-wire / short detection
 - Measurement consistency validation
 (Runtime Task)
-<p align="center"> <img src="../docs/images/runtime_diag_code.png" width="700"/> </p>
+<p align="center"> <img src="../docs/images/runtime_diag_code.png" width="500"/> </p>
 
 **Key Diagnostic Implementations:**
 **SPI Communication Check ↓**
 - Verifies communication path between MCU and external device
 - Confirms correct response and timing
 
-<p align="center"> <img src="../docs/images/diag_spi.png" width="700"/> </p>
+<p align="center"> <img src="../docs/images/Diag_SPI.png" width="500"/> </p>
 
 **CRC / Integrity Check ↓**
 - Ensures data integrity for transmitted and received frames
 - Detects communication corruption
 
-<p align="center"> <img src="../docs/images/diag_crc.png" width="700"/> </p>
+<p align="center"> <img src="../docs/images/Diag_PEC15.png" width="500"/> </p>
 
 **Self-Test Check ↓**
 - Validates internal measurement and ADC functionality
 - Ensures signal chain reliability
 
-<p align="center"> <img src="../docs/images/diag_selftest.png" width="700"/> </p>
+<p align="center"> <img src="../docs/images/Diag_MCUselfcheck.png" width="500"/> </p>
 
 **Watchdog Check ↓**
 - Verifies system responsiveness
 - Ensures periodic refresh mechanism is active
 
-<p align="center"> <img src="../docs/images/diag_watchdog.png" width="700"/> </p>
+<p align="center"> <img src="../docs/images/Diag_WatchDogCheck.png" width="500"/> </p>
 
 **Sensor / GPIO Check ↓**
 - Validates external sensor inputs
 - Detects abnormal voltage ranges
 
-<p align="center"> <img src="../docs/images/diag_gpio.png" width="700"/> </p>
+<p align="center"> <img src="../docs/images/Diag_GPIOcheck.png" width="500"/> </p>
 
 **Open-Wire Detection ↓**
 - Detects disconnected sensor or input lines
 - Based on threshold comparison
 
-<p align="center"> <img src="../docs/images/diag_openwire.png" width="700"/> </p>
+<p align="center"> <img src="../docs/images/Diag_OpenWireCheck.png" width="500"/> </p>
 
 **Short-Circuit Detection ↓**
 - Identifies abnormal low-value conditions
 - Indicates possible shorted input
 
-<p align="center"> <img src="../docs/images/diag_short.png" width="700"/> </p>
+<p align="center"> <img src="../docs/images/Diag_ShortCircuitCheck.png" width="500"/> </p>
 
 **Redundancy Check ↓**
 - Compares repeated measurements
 - Detects unstable or inconsistent data
 
-<p align="center"> <img src="../docs/images/diag_redundancy.png" width="700"/> </p>
+<p align="center"> <img src="../docs/images/Diag_RedundancyCheck.png" width="500"/> </p>
 
 **Design Highlights:**
 Modular diagnostic structure (one file per function)
