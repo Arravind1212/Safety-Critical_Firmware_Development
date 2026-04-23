@@ -48,6 +48,7 @@ Diagnostics/
 
 ## Startup Diagnostics
 The system performs a complete validation sequence before enabling normal operation.
+
 **Startup Sequence ↓**
 1 SPI communication check
 2 CRC validation
