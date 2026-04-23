@@ -1,0 +1,10 @@
+#ifndef SYSTEM_CONFIG_H
+#define SYSTEM_CONFIG_H
+
+#define ENABLE_RUNTIME_DIAGNOSTICS     1
+#define ENABLE_AI_SOC_ESTIMATION       1
+#define ENABLE_EKF_SOC_ESTIMATION      1
+
+#define SYSTEM_MONITOR_PERIOD_MS       100
+
+#endif
