@@ -1,5 +1,6 @@
-# Safety-Critical_Firmware_Development
-RTOS-based Battery Management System firmware with real-time cell monitoring, diagnostics, and safety control.
+# Safety-Critical Embedded System with AI-Based State Estimation
+
+RTOS-based firmware implementing real-time monitoring, diagnostics, communication protocols, and AI-driven SOC estimation.
 
 ## Overview
 The objective of this project is to develop a complete firmware to enable communication between the LTC6813 battery cell monitoring IC 
