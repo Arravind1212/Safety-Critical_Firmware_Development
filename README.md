@@ -51,6 +51,7 @@ modularity, and deterministic execution.
 - Command + CRC-based communication
 - Data integrity validation using CRC
 - Reliable communication over isolated interface
+- Non-Blocking SPI communication
 
 <p align="center"> <img src="docs/images/Communication_Flow2.png" width="600"/> </p>
 
