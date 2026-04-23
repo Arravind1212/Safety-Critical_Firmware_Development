@@ -70,6 +70,22 @@ The system performs the following **key functions**:
 
 ![CPU Load Distribution](docs/images/CPULoad_Distribution.png)
 
+## ISO26262 implementation
+→ Performing Hazard Analysis and Risk Assessment (HARA) ↓
+
+![ISO26262 Safety concept](docs/images/ISO26262_Implementation.png)
+
+→ Defining Safety Goals ↓
+
+![ISO26262 Safety concept](docs/images/ISO26262_Implementation2.png)
+
+→ Fuctional Safety Requirements ↓
+→ Technical Safety Requirements ↓
+→ Software & Hardware Safety Requirements
+
+![ISO26262 Safety concept](docs/images/ISO26262_Implementation3.png)
+
+
 ## Presentation
 
 📄 [View Full Technical Presentation](docs/Technical_Presentation.pdf)
