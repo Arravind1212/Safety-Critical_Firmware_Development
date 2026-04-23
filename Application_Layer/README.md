@@ -2,6 +2,9 @@
 This is the firmware application layer.
 
 It contains the following main system behavior.
+
+![Application_Layer Overview](../docs/images/Application_Layer_Outline.png)
+
 ## main.c
 - Program entry
 - Initialize MCU/peripherals
