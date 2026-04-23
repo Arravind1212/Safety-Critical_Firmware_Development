@@ -135,7 +135,7 @@ ISO-TP (ISO 15765-2) enables transmission of multi-frame messages over CAN.
 
 UDS (Unified Diagnostic Services) is used for diagnostic communication over CAN.
 
-<p align="center">  <img src="../docs/images/UDS_Architecture.png" width="500"/> </p>
+<p align="center">  <img src="../docs/images/UDS_Architecture.png" width="300"/> </p>
 
 ### Key Features
 - Service-based architecture (SID handling)
