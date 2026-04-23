@@ -69,7 +69,7 @@ The system performs the following **key functions**:
 - Optimized task scheduling and prioritization  
 - Efficient memory usage strategy  
 
-<p align="center"> <img src="docs/images/CPULoad_Distribution.png)
+<p align="center"> <img src="docs/images/CPULoad_Distribution.png)" width="600"/> </p>
 
 ## ISO26262 implementation
 → Performing Hazard Analysis and Risk Assessment (HARA) ↓
