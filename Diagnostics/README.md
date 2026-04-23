@@ -34,7 +34,6 @@ The diagnostics are executed in two stages:
 ## Module Structure
 ```text
 diagnostics/
-├── diagnostics.c/h
 ├── diag_spi.c/h
 ├── diag_crc.c/h
 ├── diag_selftest.c/h
