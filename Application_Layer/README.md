@@ -3,7 +3,7 @@ This is the firmware application layer.
 
 It contains the following main system behavior.
 
-![Application_Layer Overview](../docs/images/Application_Layer_Outline.png)
+<p align="center"> <img src="../docs/images/Application_Layer_Outline.png" width="600"/> </p>
 
 ## main.c
 - Program entry
@@ -11,7 +11,7 @@ It contains the following main system behavior.
 - Create RTOS tasks
 - Start scheduler
 
-![main.c](../docs/images/main.png)
+<p align="center"> <img src="../docs/images/main.png" width="600"/> </p>
 
 ## System_Init.c
 - Startup sequence
@@ -20,7 +20,7 @@ It contains the following main system behavior.
 - Load default configuration
 - Call startup diagnostics
 
-![System_Init.c](../docs/images/System_Init.png)
+<p align="center"> <img src="../docs/images/System_Init.png" width="600"/> </p>
 
 ## Sensor_Monitoring.c
 - Periodic data read
@@ -28,19 +28,19 @@ It contains the following main system behavior.
 - Threshold checks
 - Trigger control actions
 
-![Sensor_Monitoring.c](../docs/images/Sensor_Monitoring.c.png)
+<p align="center"> <img src="../docs/images/Sensor_Monitoring.c.png" width="600"/> </p>
 
 ## Control_Logic.c
 - Control decisions based on measurements
 ※ For example threshold-based control, actuator enable/disable, balancing-like logic
 
-![Control_Logic.c](../docs/images/Control_Logic.png)
+<p align="center"> <img src="../docs/images/Control_Logic.png" width="600"/> </p>
 
 ## Watchdog_Task.c
 - Periodic watchdog refresh
 - Timeout handling
 
-![Watchdog_Task.c](../docs/images/Watchdog_Task.png)
+<p align="center"> <img src="../docs/images/Watchdog_Task.png" width="600"/> </p>
 
 ## Comm_Task.c
 - Send logs / status through UART or CAN
@@ -51,6 +51,6 @@ It contains the following main system behavior.
 - Recovery attempt
 - Safe shutdown if needed
 
-![Error_Handler.c](../docs/images/Error_Handler.png)
+<p align="center"> <img src="../docs/images/Error_Handler.png" width="600"/> </p>
 
 --END--
