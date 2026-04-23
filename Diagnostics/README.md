@@ -49,17 +49,17 @@ Diagnostics/
 ## Startup Diagnostics
 The system performs a complete validation sequence before enabling normal operation.
 
-**Startup Sequence ↓**
-1 SPI communication check
-2 CRC validation
-3 ADC self-test
-4 Sensor input validation
-5 Watchdog check
-6 Open-wire detection
-7 Short-circuit detection
-8 Redundancy check
+## Startup Sequence↓
+1.SPI communication check
+2.CRC validation
+3.ADC self-test
+4.Sensor input validation
+5.Watchdog check
+6.Open-wire detection
+7.Short-circuit detection
+8.Redundancy check
 
-**Runtime Diagnostics**
+## Runtime Diagnostics
 Periodic checks are executed during system operation to detect faults and degraded conditions.
 
 Includes↓
