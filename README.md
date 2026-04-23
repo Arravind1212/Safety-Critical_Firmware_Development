@@ -13,7 +13,7 @@ fault detection, and safety mechanisms aligned with automotive functional safety
 - The firmware is designed as a real-time, safety-critical embedded system running on an RTOS-based architecture.
 It interfaces with external sensor and monitoring hardware through a robust isolated communication interface.
 
-<p align="center"> <img src="![System Architecture](docs/images/System_Overview.png)" width="700"/> </p>
+<p align="center"> <img src="docs/images/System_Overview.png" width="700"/> </p>
 
 ## Technical Description
 The firmware architecture is divided into three major layers:
