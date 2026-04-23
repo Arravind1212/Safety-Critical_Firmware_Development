@@ -27,7 +27,7 @@ The firmware architecture is divided into three major layers:
 The system is designed to be scalable and suitable for automotive applications, with considerations for ISO26262 safety compliance, 
 modularity, and deterministic execution.
 
-![Firmware Architecture](docs/images/Firmware_Architecture.png)
+<p align="center"> <img src="docs/images/Firmware_Architecture.png" width="600"/> </p>
 
 The system performs the following **key functions**:
 - Real-time acquisition of sensor data using ADC-based measurement
@@ -43,16 +43,16 @@ The system performs the following **key functions**:
 - Watchdog Task → System health supervision  
 - Communication Task → Logging / data exchange
   
-![RTOS Tasks](docs/images/RTOS_tasks.png)
+<p align="center"> <img src="docs/images/RTOS_tasks.png" width="600"/> </p>
 
 ## Communication Design
 
-![Communication Flow](docs/images/Communication_Flow.png)
+<p align="center"> <img src="docs/images/Communication_Flow.png" width="600"/> </p>
 - Command + CRC-based communication
 - Data integrity validation using CRC
 - Reliable communication over isolated interface
 
-![SPI Non-Blocking Communication](docs/images/Communication_Flow2.png)
+<p align="center"> <img src="docs/images/Communication_Flow2.png" width="600"/> </p>
 
 ## Safety Features
 - Startup diagnostics before system operation  
@@ -68,22 +68,22 @@ The system performs the following **key functions**:
 - Optimized task scheduling and prioritization  
 - Efficient memory usage strategy  
 
-![CPU Load Distribution](docs/images/CPULoad_Distribution.png)
+<p align="center"> <img src="docs/images/CPULoad_Distribution.png)
 
 ## ISO26262 implementation
 → Performing Hazard Analysis and Risk Assessment (HARA) ↓
 
-![ISO26262 Safety concept](docs/images/ISO26262_Implementation.png)
+<p align="center"> <img src="docs/images/ISO26262_Implementation.png" width="600"/> </p>
 
 → Defining Safety Goals ↓
 
-![ISO26262 Safety concept](docs/images/ISO26262_Implementation2.png)
+<p align="center"> <img src="docs/images/ISO26262_Implementation2.png" width="600"/> </p>
 
 → Fuctional Safety Requirements ↓
 → Technical Safety Requirements ↓
 → Software & Hardware Safety Requirements
 
-![ISO26262 Safety concept](docs/images/ISO26262_Implementation3.png)
+<p align="center"> <img src="docs/images/ISO26262_Implementation3.png" width="600"/> </p>
 
 
 ## Presentation
