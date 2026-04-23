@@ -47,12 +47,13 @@ The system performs the following **key functions**:
 
 ## Communication Design
 
-<p align="left"> <img src="docs/images/Communication_Flow.png" width="600"/> </p>
+<p align="center"> <img src="docs/images/Communication_Flow.png" width="600"/> </p>
+
 - Command + CRC-based communication
 - Data integrity validation using CRC
 - Reliable communication over isolated interface
 
-<p align="left"> <img src="docs/images/Communication_Flow2.png" width="600"/> </p>
+<p align="center"> <img src="docs/images/Communication_Flow2.png" width="600"/> </p>
 
 ## Safety Features
 - Startup diagnostics before system operation  
@@ -68,7 +69,7 @@ The system performs the following **key functions**:
 - Optimized task scheduling and prioritization  
 - Efficient memory usage strategy  
 
-<p align="left"> <img src="docs/images/CPULoad_Distribution.png)
+<p align="center"> <img src="docs/images/CPULoad_Distribution.png)
 
 ## ISO26262 implementation
 → Performing Hazard Analysis and Risk Assessment (HARA) ↓
@@ -84,7 +85,6 @@ The system performs the following **key functions**:
 → Software & Hardware Safety Requirements
 
 <p align="center"> <img src="docs/images/ISO26262_Implementation3.png" width="600"/> </p>
-
 
 ## Presentation
 
