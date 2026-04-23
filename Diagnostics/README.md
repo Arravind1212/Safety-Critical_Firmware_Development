@@ -122,14 +122,14 @@ Includes↓
 
 <p align="center"> <img src="../docs/images/Diag_RedundancyCheck.png" width="500"/> </p>
 
-**Design Highlights:**
-Modular diagnostic structure (one file per function)
-Separation of startup and runtime diagnostics
-Reusable and scalable design
-Supports safety-critical system behavior
-Centralized fault detection and reporting
+## Design Highlights:
+- Modular diagnostic structure (one file per function)
+- Separation of startup and runtime diagnostics
+- Reusable and scalable design
+- Supports safety-critical system behavior
+- Centralized fault detection and reporting
 
-**Integration**
+## Integration:
 This module interacts with:
 * Drivers Layer → SPI, GPIO, Timer
 * Service Layer → Protocol handling, CRC validation
