@@ -6,6 +6,7 @@
 #include "uart_logger.h"
 #include "FreeRTOS.h"
 #include "task.h"
+#include "soc_estimator.h"
 #include <string.h>
 
 static uint16_t cell_voltage_mV[CELL_COUNT];
@@ -102,6 +103,16 @@ void CellMonitor_Task(void *pvParameters) {
         }
 
         ConvertTo_mV(raw_adc, 0.1f, cell_voltage_mV, 3);
+        pack_current_A = CurrentSensor_Read();
+        pack_temp_C = Temperature_GetAverage();
+        soc_percent = SOC_Estimator_Update(
+            cell_voltage_mV,
+            CELL_COUNT,
+            pack_current_A,
+            pack_temp_C,
+            1.0f   // sampling time in seconds
+        );
+        
         CheckSafetyAndBalance();
 
         vTaskDelay(pdMS_TO_TICKS(1000));
