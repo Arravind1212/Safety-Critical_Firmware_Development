@@ -32,7 +32,8 @@ The diagnostics are executed in two stages:
 - Runtime diagnostics → periodic health monitoring  
 
 ## Module Structure
-Diagnostics/
+```text
+diagnostics/
 ├── diagnostics.c/h
 ├── diag_spi.c/h
 ├── diag_crc.c/h
@@ -45,6 +46,7 @@ Diagnostics/
 ├── diag_redundancy.c/h
 ├── startup_diagnostics.c/h
 └── runtime_diagnostics.c/h
+```
 
 ## Startup Diagnostics
 The system performs a complete validation sequence before enabling normal operation.
